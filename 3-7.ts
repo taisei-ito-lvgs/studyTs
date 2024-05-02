@@ -1,18 +1,18 @@
-type Engine = {
-    engineType: string;
-    volume: number;
+type Color = {
+    hairColor: string;
+    eyeColor: string;
 };
 
-type Wheels = {
-    wheelCount: number;
+type Gen = {
+    Generation: number;
 };
 
-type Car = Engine & Wheels;
+type Miko = Color & Gen;
 
-const myCar: Car = {
-    engineType: "V8",
-    volume: 3000,
-    wheelCount: 4,
+const sakuraMiko: Miko = {
+    hairColor: "Pink",
+    eyeColor: "Green",
+    Generation: 0,
 };
 
-console.log(myCar.wheelCount);//4
+console.log(sakuraMiko.hairColor);
